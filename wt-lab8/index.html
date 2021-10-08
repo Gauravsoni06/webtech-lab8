@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>Register here</h1>
+    <form aciton ="/catwebtechexam-main/tourism.html" name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="formdesign" id="name">
+            Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+        </div>
+
+        <div class="formdesign" id="email">
+            Email: <input type="email" name="femail" required><b><span class="formerror"> </span></b>
+        </div>
+
+        <div class="formdesign" id="phone">
+            Phone: <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
+        </div>
+
+        <div class="formdesign" id="pass">
+            Password: <input type="password" name="fpass" required><b><span class="formerror"</span></b>
+        </div>
+
+        <div class="formdesign" id="cpass">
+            Confirm Password: <input type="password" name="fcpass" required><b><span class="formerror"></span></b>
+        </div>
+        <div class="formdesign" id="cpass">
+            <label>Gender</label>
+            <select class="custom-select form-control" required id="gender">
+              <option value="">Open this select menu</option>
+              <option value="1">Male</option>
+              <option value="2">Female</option>
+              <option value="3">Other</option>
+            </select>
+         
+          </div>
+        <div class="formdesign" id="cpass">
+            <label>Tell us about yourself</label>
+            <textarea name="the-textarea" id="the-textarea" maxlength="300" placeholder="Start Typin..."autofocus class="form-control" ></textarea>
+            <div id="the-count" style="margin-left: 30rem;">
+              <span id="current">0</span>
+              <span id="maximum">/ 300</span>
+            </div>
+        </div>
+        <div class="formdesign" id="cpass">
+            <label>Date of birth</label>
+            <input type="date" class="form-control" id="phone" placeholder="enter date ">
+        </div>
+        <div class="formdesign" id="cpass">
+        <label>Places you intrested to visit</label>
+        <div class="form-check" name="form-check" id="form-check">
+            <input type="checkbox" class="form-check-input mx-auto" id="checkbox1" name="Rock">
+            <label class="form-check-label mx-auto" for="checkbox">India</label><br>
+            <input type="checkbox" class="form-check-input mx-auto" id="checkbox2" name="Pop">
+            <label class="form-check-label mx-auto" for="checkbox">USA</label><br>
+            <input type="checkbox" class="form-check-input mx-auto" id="checkbox3" name="Country">
+            <label class="form-check-label mx-auto" for="checkbox">Australia</label><br>
+            <input type="checkbox" class="form-check-input mx-auto" id="checkbox4" name="Classic">
+            <label class="form-check-label mx-auto" for="checkbox">Fantasy</label><br>
+            <p id="check">
+            
+            </p>
+            
+        </div>
+
+        </div>
+        <div class="form-group" id="cpass">
+              <label>Physically Disabled</label>
+              <br>
+              <input type="radio" name="buy" value="buy" id="buy"> 
+              <label for="buy">Yes </label>
+              <input type="radio" name="sell" value="sell" id="sell">
+              <label for="Rent">No</label>
+              <div id=error></div>
+            </div>
+        <input class="but" type="submit" value="Submit">
+        
+    </form>
+</body>
+<script src="index.js"></script>
+
+</html>
